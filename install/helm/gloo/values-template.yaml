@@ -173,6 +173,10 @@ ingressProxy:
     data:
   tracing:
 global:
+  extensions:
+    extAuth:
+      envoySidecar: true
+      standaloneDeployment: false
   image:
     registry: quay.io/solo-io
     pullPolicy: IfNotPresent
